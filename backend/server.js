@@ -9,7 +9,7 @@ var io = require('socket.io')(server, {
 
 io.on('connection', socket => {
   socket.on('disconnect', reason => {
-    console.log('user disconnected');
+    io.emit('chat message', "Usuario desconectado");
   });
 
   socket.on('room', data => {
@@ -23,15 +23,7 @@ io.on('connection', socket => {
 
   socket.on('leave room', data => {
     console.log('leaving room');
-    console.log(data);
     socket.leave(data.room)
-  });
-
-  socket.on('new message', data => {
-    console.log(data)
-    socket.broadcast
-      .to(data.room)
-      .emit('receive message', data)
   });
 });
 

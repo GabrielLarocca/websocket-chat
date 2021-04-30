@@ -1,0 +1,94 @@
+::-webkit-scrollbar {
+    width: 2px !important;
+}
+   
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.image{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+    border: 3px solid black;
+    background-image: url('../assets/img/wppwallpaper.jpg');
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-top: 20px;
+}
+
+.input{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 50px;
+    width: 60%;
+    border-radius: 10px;
+    padding-bottom: 2px;
+    margin-top: 15px;
+}
+
+.mensagens{
+    top: 11px;
+    list-style-type: none;
+    position:relative;
+    height: 90%;
+    right: 20px;
+    overflow: auto;
+}
+
+.textsMsgs{
+    width: 20%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 15px;
+    word-break: break-word;
+}
+
+.theyMsg{
+    background-color: #0f4791;
+}
+
+.ourMsg{
+    background-color: #0f4791;
+    margin-left: 75%;
+}
+
+.serverMsg{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ffff00;
+    width: 20%;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.gridInput{
+    width: 110% !important;
+    position: relative;
+    top: 11px;
+}
+
+.btnEnterRoom{
+    padding-top: 20px;
+}
+
+.none{
+    visibility:hidden;
+}
