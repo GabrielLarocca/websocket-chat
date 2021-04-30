@@ -65,6 +65,7 @@ export default function Chat() {
       myname = user;
       document.getElementById("mensagem").focus();
       setmensagem("");
+      document.body.scrollTop = 0;
     }
   }
 

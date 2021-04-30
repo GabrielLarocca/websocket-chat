@@ -3,13 +3,16 @@ var server = require('http').createServer();
 var io = require('socket.io')(server, {
   cors: {
     origin: "http://localhost:3000",
-    credentials: true
-  }
+    credentials: true,
+    methods: ["GET", "POST"],
+    transports: ['websocket', 'polling'],
+  },
+  allowEIO3: true
 });
 
 io.on('connection', socket => {
   socket.on('disconnect', reason => {
-    io.emit('chat message', "Usuario desconectado");
+    // io.emit('chat message', "Usuario desconectado");
   });
 
   socket.on('room', data => {
